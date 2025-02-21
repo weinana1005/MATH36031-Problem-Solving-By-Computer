@@ -1,0 +1,16 @@
+function A=backgroundplot(NC,SC,z0)
+NC=[-350,620];% Set N-corner
+SC=[-500,350];% Set S-corner
+z0=[0,0];
+xlabel('x')
+ylabel('y')
+plot(800*(-sin(pi/3)),800*cos(pi/3),'k.','MarkerSize',7);text(800*(-sin(pi/3)+5),800*cos(pi/3),'Burrow')
+hold on
+plot(-500,350,'k.','MarkerSize',7);text(-510,340,'S')
+plot(0,0,'k.','MarkerSize',7);text(0,10,'F')
+plot(-350,620,'k.','MarkerSize',7);text(-350,630,'N')
+plot(0,800,'k.','MarkerSize',7);text(0,810,'R')
+ylim([-800,900]);
+xlim([-900,600]);
+plot([-500,-350],[350,620]);
+end
